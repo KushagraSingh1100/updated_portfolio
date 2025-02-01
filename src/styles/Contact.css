@@ -1,0 +1,79 @@
+.contact-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+    gap: 10vw;
+    background-color: rgb(25, 25, 25);
+    overflow: hidden;
+    padding: 0 3vw;
+}
+
+.contact-above{
+    display: flex;
+    align-items: center;
+}
+
+.contact-heading{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    gap: 3vw;
+}
+
+.contact-heading h1{
+    width: 50vw;
+}
+
+.pfp{
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    background-image: url("../assets//imgs/pfp.jpg");
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-list{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.phone, .mail, .github, .linkedin{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+.contact-slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contact-page hr{
+    width: 80%;
+    color: white;
+}
+
+.contact-slider .circle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+    top: -5000%;
+    left: 60%;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(255, 223, 181) 50%, rgb(255, 223, 181) 100%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    transition: background-position 0.1s ease;
+    cursor: pointer;
+}

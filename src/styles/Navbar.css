@@ -1,0 +1,30 @@
+.navbar{
+    display: flex;
+    height: 10vh;
+    padding: 0 2vw;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", serif;
+    background-color: rgba(0, 0, 0);
+}
+
+.navbar-heading h1{
+    color: white;
+    font-weight: 400;
+    font-size: 1vw;
+    cursor: pointer;
+    width: 10vw;
+    transition:all 1s ;
+}
+
+.links ul{
+    color: white;
+    display: flex;
+    gap: 1.5vw;
+}
+
+.links ul li, a{
+    all: unset;
+    cursor: pointer;
+    font-size: 1.1vw;
+}

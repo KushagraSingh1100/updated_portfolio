@@ -1,0 +1,50 @@
+.about-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Raleway", serif;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+}
+
+.about-me-left{
+    font-weight: 600;
+    width: 35vw;
+    padding: 10vw;
+    font-size: 3vw;
+}
+
+.about-me-right{
+    transform: translate(0, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6vw;
+    padding: 0 10vw;
+}
+
+.about-me-right .quote{
+    width: 25vw;
+    font-size: 1.5vw;
+}
+
+.about-me-right .circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    background: linear-gradient(to top, rgb(185, 185, 185) 0%, rgb(185, 185, 185) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    background-size: 100% 200%;
+    background-position: 0% 0%;
+    font-size: 0.6vw;
+    color: white;
+    transition: background-position 0.1s ease;
+}
+
+.circle h1 {
+    z-index: 1;
+    font-size: 18px;
+  }
