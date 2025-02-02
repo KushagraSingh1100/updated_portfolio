@@ -73,7 +73,7 @@ function Contact() {
     }
   }, []);
   return (
-    <div className="contact-page">
+    <div id="contact" className="contact-page">
       <div className="contact-above">
         <div className="contact-heading">
           <div className="pfp"></div>
@@ -110,7 +110,9 @@ function Contact() {
                 </g>
               </g>
             </svg>
-            <h3>kushagrasingh1100@gmail.com</h3>
+            <a href="mailto:kushagrasingh1100@gmail.com">
+              <h3>kushagrasingh1100@gmail.com</h3>
+            </a>
           </div>
           <div className="phone">
             <svg
@@ -128,7 +130,9 @@ function Contact() {
                 fill="#ffffff" // Set the color to white
               />
             </svg>
-            <h3>+91-9451552234</h3>
+            <a href="tel:+919451552234">
+              <h3>+91-9451552234</h3>
+            </a>
           </div>
           <div className="github">
             <svg

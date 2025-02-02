@@ -68,7 +68,7 @@ function About() {
     }
   }, []);
   return (
-    <div className="about-page">
+    <div id="about" className="about-page">
       <div className="about-me-left">
         <p>A creative Web-Developer bringing great ideas into reality.</p>
       </div>

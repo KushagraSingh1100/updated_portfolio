@@ -28,7 +28,7 @@ function Home() {
     })
   });
   return (
-    <div className="home-page">
+    <div id="home" className="home-page">
       <div className="home-left-tag">
         <div className="tag-text">
           <p>

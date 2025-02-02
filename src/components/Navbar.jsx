@@ -10,18 +10,20 @@ function Navbar() {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        <h1>{hover == false ? "© Code by Kushagra" : "© Kushagra Singh"}</h1>
+        <a href="#home">
+          <h1>{hover == false ? "© Code by Kushagra" : "© Kushagra Singh"}</h1>
+        </a>
       </div>
       <div className="links">
         <ul>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Work</a>
+            <a href="#projects">Work</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

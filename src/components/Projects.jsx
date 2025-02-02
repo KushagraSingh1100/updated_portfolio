@@ -21,7 +21,7 @@ function Projects() {
       scrollTrigger: {
         scrub: true,
         trigger: ".projects-page",
-        end: "90% 60%",
+        end: "60% 60%",
       },
     });
     gsap.from(".projects-items hr", {
@@ -36,7 +36,7 @@ function Projects() {
       });
   });
   return (
-    <div className="projects-page">
+    <div id="projects" className="projects-page">
       <div className="projects-heading">
         <h6>Projects</h6>
       </div>
