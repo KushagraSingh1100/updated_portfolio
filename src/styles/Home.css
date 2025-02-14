@@ -146,6 +146,6 @@
     }
 
     .home-moving-strip {
-        transform: translate(-78vw, 25vh);
+        transform: translate(15vh, 25vh);
     }
 }
