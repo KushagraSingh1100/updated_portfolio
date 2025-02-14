@@ -8,13 +8,20 @@ function Contact() {
   const circleRef = useRef(null);
   useGSAP(() => {
     const circle = circleRef.current;
-    gsap.from(".contact-page", {
+    const myAnimation2 = gsap.from(".contact-page", {
       borderRadius: 500,
       scrollTrigger: {
         scrub: 3,
         start: "-20% 50%",
         end: "0% 50%",
         trigger: ".contact-page",
+        onLeave: (self) => {
+          myAnimation2.kill();
+          self.kill();
+        },
+      },
+      onComplete: () => {
+        myAnimation2.kill();
       },
     });
     gsap.to(circleRef.current, {

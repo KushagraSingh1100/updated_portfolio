@@ -30,7 +30,7 @@ function Projects() {
       },
     });
 
-    gsap.from(".items", {
+    const myAnimation = gsap.from(".items", {
       y: 200,
       opacity: 0,
       stagger: 0.5,
@@ -39,10 +39,17 @@ function Projects() {
         trigger: ".projects-page",
         start: "-20% 30%",
         end: "40% 60%",
+        onLeave: (self) => {
+          myAnimation.kill();
+          self.kill();
+        },
+      },
+      onComplete: () => {
+        myAnimation.kill();
       },
     });
 
-    gsap.from(".projects-items hr", {
+    const myAnimation1 = gsap.from(".projects-items hr", {
       y: 200,
       opacity: 0,
       stagger: 0.5,
@@ -50,6 +57,13 @@ function Projects() {
         scrub: true,
         trigger: ".projects-page",
         end: "60% 60%",
+        onLeave: (self) => {
+          myAnimation1.kill();
+          self.kill();
+        },
+      },
+      onComplete: () => {
+        myAnimation1.kill();
       },
     });
 
