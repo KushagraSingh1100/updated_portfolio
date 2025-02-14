@@ -13,7 +13,7 @@ function Contact() {
       scrollTrigger: {
         scrub: 3,
         start: "-20% 50%",
-        end: "50% 50%",
+        end: "0% 50%",
         trigger: ".contact-page",
       },
     });

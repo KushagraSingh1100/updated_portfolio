@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 function About() {
   const circleRef = useRef(null);
   useGSAP(() => {
+    let mm = gsap.matchMedia();
     gsap.registerPlugin(ScrollTrigger);
     const circle = circleRef.current;
     gsap.from(".about-me-left", {
@@ -13,6 +14,7 @@ function About() {
       opacity: 0,
       scrollTrigger: {
         scrub: true,
+
         trigger: ".about-page",
         start: "30% bottom",
         end: "0% top",
@@ -79,7 +81,7 @@ function About() {
             positions me in a unique place in the web development world.
           </p>
         </div>
-        <a href="#">
+        <a href="https://portfolio-opal-alpha-80.vercel.app/">
           <div className="circle" ref={circleRef}>
             <h1>About Me</h1>
           </div>

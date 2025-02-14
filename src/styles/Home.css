@@ -1,4 +1,4 @@
-.home-page{
+.home-page {
     height: 90vh;
     width: 100%;
     background-image: url("../assets/imgs/wallpaper.jpg");
@@ -7,7 +7,8 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.home-left-tag{
+
+.home-left-tag {
     height: 15vh;
     width: 15vw;
     transform: translate(0, 28vh);
@@ -15,7 +16,7 @@
     position: relative;
 }
 
-.home-left-tag::before{
+.home-left-tag::before {
     content: "";
     position: absolute;
     width: 15vh;
@@ -31,9 +32,9 @@
     position: absolute;
     width: 6vw;
     height: 6vw;
-    top: 7%;
+    top: 10%;
     right: -15%;
-    background-image: url('../assets/imgs/globe.png'); 
+    background-image: url('../assets/imgs/globe.png');
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,23 +44,25 @@
 
 }
 
+
 @keyframes rotateGlobe {
     from {
         transform: rotateY(0deg);
     }
+
     to {
         transform: rotateY(360deg);
     }
 }
 
-.tag-text{
+.tag-text {
     height: 100%;
     width: 13vw;
     display: flex;
     align-items: center;
 }
 
-.tag-text p{
+.tag-text p {
     font-family: "Raleway", serif;
     font-weight: 500;
     font-size: 1.2vw;
@@ -67,32 +70,81 @@
     width: 6vw;
 }
 
-.home-right-text{
+.home-right-text {
     font-family: "Raleway", serif;
     color: white;
     transform: translate(70vw, 8vh);
 }
 
-.right-text-heading{
+.right-text-heading {
     font-size: 1.5vw;
 }
 
-.right-text-heading h1{
+.right-text-heading h1 {
     font-weight: 400;
 }
 
-.right-text-arrow img{
+.right-text-arrow img {
     width: 1.8vw;
 }
 
-.right-text-arrow{
+.right-text-arrow {
     transform: translate(-5vw, -10vh);
 }
 
-.home-moving-strip{
+.home-moving-strip {
     text-wrap: nowrap;
     color: white;
     font-size: 12vw;
     font-family: "Raleway", serif;
-    transform: translate(-78vw, 20vh);
+    transform: translate(-78vw, 18vh);
+}
+
+@media screen and (max-width: 600px) {
+    .home-page {
+        height: 70vh;
+        width: 100vw;
+    }
+
+    .home-left-tag {
+        margin-top: 20vw;
+        height: 10vh;
+        width: 35vw;
+    }
+
+    .tag-text p {
+        font-size: 2vh;
+    }
+
+    .home-left-tag::before {
+        width: 10vh;
+        height: 10vh;
+        top: 0%;
+        right: -26%;
+    }
+
+    .home-left-tag::after {
+        width: 6vh;
+        height: 6vh;
+        top: 18%;
+        right: -15%;
+    }
+
+    .home-right-text {
+        transform: translate(200px, 10px);
+        width: 100vw;
+    }
+
+    .right-text-arrow img {
+        width: 2.5vh;
+    }
+
+    .right-text-heading {
+        transform: translate(-3vw, 0vw);
+        font-size: 1.5vh;
+    }
+
+    .home-moving-strip {
+        transform: translate(-78vw, 25vh);
+    }
 }

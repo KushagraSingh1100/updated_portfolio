@@ -1,4 +1,4 @@
-.about-page{
+.about-page {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -8,14 +8,14 @@
     padding-bottom: 1vw;
 }
 
-.about-me-left{
+.about-me-left {
     font-weight: 600;
     width: 35vw;
     padding: 10vw;
     font-size: 3vw;
 }
 
-.about-me-right{
+.about-me-right {
     transform: translate(0, 20%);
     display: flex;
     flex-direction: column;
@@ -24,12 +24,12 @@
     padding: 0 10vw;
 }
 
-.about-me-right .quote{
+.about-me-right .quote {
     width: 25vw;
     font-size: 1.5vw;
 }
 
-.about-me-right .circle{
+.about-me-right .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,4 +47,39 @@
 .circle h1 {
     z-index: 1;
     font-size: 18px;
-  }
+}
+
+@media screen and (max-width: 600px) {
+    .about-page {
+        height: 50vh;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 0vh;
+    }
+
+    .about-me-left p {
+        font-size: 5vw;
+        width: 55vw;
+    }
+
+    .about-me-right {
+        transform: translate(0%, 0%);
+        width: 100%;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .quote p {
+        width: 80vw;
+        font-size: 4.5vw;
+    }
+
+    .about-me-right .circle {
+        transform: translate(165%, 20%);
+        width: 30vw;
+        height: 30vw;
+        font-size: 0.6vw;
+    }
+
+}
