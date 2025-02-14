@@ -86,6 +86,7 @@
         height: 60vh;
         padding: 0 3vw;
         padding-bottom: 20vh;
+        overflow-x: hidden;
     }
 
     .contact-above {

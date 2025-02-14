@@ -106,6 +106,7 @@
         height: 110vh;
         padding: 2vw;
         margin-bottom: 2vh;
+        overflow-x: hidden;
     }
     .projects-heading{
         font-size: 3vh;
