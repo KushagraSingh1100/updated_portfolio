@@ -11,21 +11,21 @@ function Home() {
       repeat: -1,
       ease: "power1.out",
     });
-    gsap.from('.home-left-tag',{
-      x:-200,
+    gsap.from(".home-left-tag", {
+      x: -200,
       duration: 1,
       ease: "power1.inOut",
-    })
-    gsap.from('.right-text-heading',{
-      x:400,
+    });
+    gsap.from(".right-text-heading", {
+      x: 400,
       duration: 1.5,
       ease: "power1.inOut",
-    })
-    gsap.from('.right-text-arrow img',{
+    });
+    gsap.from(".right-text-arrow img", {
       rotateX: 360,
       duration: 1.5,
       ease: "power1.inOut",
-    })
+    });
   });
   return (
     <div id="home" className="home-page">
