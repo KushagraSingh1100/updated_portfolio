@@ -129,13 +129,13 @@
     .contact-slider .circle {
         width: 7vh;
         height: 7vh;
-        top: -5vh;
+        top: -4vh;
         left: 60%;
     }
 
     .contact-slider .circle h1 {
         text-align: center;
-        font-size: 2vh;
+        font-size: 1.4vh;
         font-weight: 500;
     }
 }
