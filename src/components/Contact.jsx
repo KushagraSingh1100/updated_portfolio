@@ -17,16 +17,7 @@ function Contact() {
         trigger: ".contact-page",
       },
     });
-    gsap.to(circleRef.current, {
-      x: 200,
-      scale: 1.3,
-      scrollTrigger: {
-        start: "-20% top",
-        end: "20% 20%",
-        scrub: 4,
-        trigger: ".contact-page",
-      },
-    });
+    
     gsap.from(".pfp", {
       scale: 0.5,
       scrollTrigger: {
