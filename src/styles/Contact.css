@@ -81,6 +81,7 @@
     cursor: pointer;
 }
 
+
 @media screen and (max-width: 600px) {
     .contact-page {
         height: 60vh;
