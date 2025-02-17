@@ -86,7 +86,7 @@ function Projects() {
   });
 
   return (
-    <div className="projects-page">
+    <div id="projects" className="projects-page">
       <div className="projects-heading">
         <h6>Projects</h6>
       </div>
