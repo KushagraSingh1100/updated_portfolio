@@ -35,8 +35,8 @@ function App() {
         <motion.div
           className="loader"
           initial={{ opacity: 1 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut" }}
+          animate={{ opacity: 0 }}
+          transition={{ duration: 3.5, ease: "easeInOut" }}
           style={{
             pointerEvents: "all",
             position: "absolute",
