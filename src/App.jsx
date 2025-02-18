@@ -7,16 +7,25 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import { motion } from "framer-motion";
 function App() {
-  const [load, setLoad] = useState(true);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setLoad(true);
+    const handleLoad = () => {
+      setLoading(false);
+    };
     const timeout = setTimeout(() => {
-      setLoad(false);
-    }, 2000);
+      if (document.readyState === "complete") {
+        setLoading(false);
+      } else {
+        window.addEventListener("load", handleLoad);
+      }
+      return () => {
+        window.removeEventListener("load", handleLoad);
+      };
+    }, 1500);
   }, []);
   return (
     <>
-      {load === true ? (
+      {loading ? (
         <div className="loader">
           <Loader />
           <h1>Loading...</h1>

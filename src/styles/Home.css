@@ -1,11 +1,16 @@
 .home-page {
     height: 90vh;
     width: 100%;
-    background-image: url("../assets/imgs/wallpaper.jpg");
+    background-image: url("../assets/imgs/wallpaper-low.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
+}
+
+.home-page.loaded {
+    background-image: url("../assets/imgs/wallpaper-high.jpg");
+    transition: background-image 0.8s ease-in-out;
 }
 
 .home-left-tag {
