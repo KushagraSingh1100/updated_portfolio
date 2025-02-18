@@ -6,45 +6,64 @@ import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import { motion } from "framer-motion";
+
 function App() {
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const handleLoad = () => {
       setLoading(false);
     };
+
     const timeout = setTimeout(() => {
       if (document.readyState === "complete") {
         setLoading(false);
       } else {
         window.addEventListener("load", handleLoad);
       }
-      return () => {
-        window.removeEventListener("load", handleLoad);
-      };
     }, 1500);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      clearTimeout(timeout);
+    };
   }, []);
+
   return (
-    <>
-      {loading ? (
-        <div className="loader">
+    <div>
+      {loading && (
+        <motion.div
+          className="loader"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          style={{
+            pointerEvents: "all",
+            position: "absolute",
+            top: "0",
+            left: "0",
+            zIndex: 9999,
+            display: loading ? "flex" : "none",
+          }}
+        >
           <Loader />
           <h1>Loading...</h1>
-        </div>
-      ) : (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1.3 }}
-        >
-          <Navbar />
-          <Home />
-          <About />
-          <Projects />
-          <Contact />
         </motion.div>
       )}
-    </>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: loading ? 0 : 1 }}
+        transition={{ duration: 1.3, ease: "easeInOut" }}
+        style={{ position: "relative" }}
+      >
+        <Navbar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </motion.div>
+    </div>
   );
 }
 
