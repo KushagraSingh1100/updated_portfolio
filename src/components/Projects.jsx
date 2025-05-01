@@ -14,8 +14,8 @@ function Projects() {
   const links = [
     "https://github.com/KushagraSingh1100/Youtube-Clone",
     "https://github.com/KushagraSingh1100/Minimalist-News",
-    "https://github.com/KushagraSingh1100/TextTools",
-    "https://github.com/KushagraSingh1100/Weather-App",
+    "https://github.com/KushagraSingh1100/updated_portfolio",
+    "https://github.com/KushagraSingh1100/IITR-BitByBit",
   ];
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -95,19 +95,19 @@ function Projects() {
         {[
           {
             title: "YouTube Clone",
-            desc: "A working YouTube clone made using React.js and YouTube API.",
+            desc: "A video streaming web app replicating core YouTube features like video playback, search, categories, and responsive UI using the YouTube Data API.",
           },
           {
             title: "Minimalist News",
-            desc: "A minimalistic news app bringing the latest news according to your liking.",
+            desc: "A clean and distraction-free news app that delivers real-time headlines across categories, with a focus on speed, simplicity, and readability.",
           },
           {
-            title: "Text Tool",
-            desc: "A helpful text manipulation app made using React.js.",
+            title: "Event Pulse",
+            desc: "A dynamic event management web app that allows users to discover, create, and manage events seamlessly. Built with a responsive UI and real-time updates for a smooth user experience.",
           },
           {
-            title: "Weather App",
-            desc: "A weather app bringing weather details worldwide with a sleek UI.",
+            title: "Free Work",
+            desc: "A freelance marketplace platform with features like escrow payment system, milestone tracking, and secure client-freelancer collaboration. Designed for smooth and trusted project management.",
           },
         ].map((project, index) => (
           <React.Fragment key={index}>
