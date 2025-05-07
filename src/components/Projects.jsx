@@ -12,10 +12,10 @@ import youtube from "../assets/imgs/youtube.jpeg";
 
 function Projects() {
   const links = [
-    "https://github.com/KushagraSingh1100/Youtube-Clone",
-    "https://github.com/KushagraSingh1100/Minimalist-News",
-    "https://github.com/KushagraSingh1100/updated_portfolio",
+    "https://github.com/KushagraSingh1100/Link-Shortner",
+    "https://github.com/KushagraSingh1100/eventpulse",
     "https://github.com/KushagraSingh1100/IITR-BitByBit",
+    "https://github.com/KushagraSingh1100/Youtube-Clone",
   ];
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -94,12 +94,8 @@ function Projects() {
       <div className="projects-items">
         {[
           {
-            title: "YouTube Clone",
-            desc: "A video streaming web app replicating core YouTube features like video playback, search, categories, and responsive UI using the YouTube Data API.",
-          },
-          {
-            title: "Minimalist News",
-            desc: "A clean and distraction-free news app that delivers real-time headlines across categories, with a focus on speed, simplicity, and readability.",
+            title: "Rapid Shortener",
+            desc: "A fast and minimal URL shortening tool that creates compact links with click tracking, designed for simplicity, speed, and a seamless user experience.",
           },
           {
             title: "Event Pulse",
@@ -108,6 +104,10 @@ function Projects() {
           {
             title: "Free Work",
             desc: "A freelance marketplace platform with features like escrow payment system, milestone tracking, and secure client-freelancer collaboration. Designed for smooth and trusted project management.",
+          },
+          {
+            title: "YouTube Clone",
+            desc: "A video streaming web app replicating core YouTube features like video playback, search, categories, and responsive UI using the YouTube Data API.",
           },
         ].map((project, index) => (
           <React.Fragment key={index}>
