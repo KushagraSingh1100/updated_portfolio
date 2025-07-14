@@ -35,9 +35,9 @@
 .home-left-tag::after {
     content: "";
     position: absolute;
-    width: 6vw;
-    height: 6vw;
-    top: 8%;
+    width: 5vw;
+    height: 5vw;
+    top: 12%;
     right: -15%;
     background-image: url('../assets/imgs/globe.png');
     background-size: 50%;

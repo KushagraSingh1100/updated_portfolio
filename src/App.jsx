@@ -11,6 +11,15 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+  document.body.style.overflow = loading ? "hidden" : "auto";
+
+  return () => {
+    document.body.style.overflow = "auto"; // Cleanup on unmount
+  };
+}, [loading]);
+
+
+  useEffect(() => {
     const handleLoad = () => {
       setLoading(false);
     };
@@ -43,6 +52,7 @@ function App() {
             top: "0",
             left: "0",
             zIndex: 9999,
+            overflow: "hidden",
             display: loading ? "flex" : "none",
           }}
         >
