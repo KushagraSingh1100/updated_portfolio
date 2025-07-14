@@ -77,7 +77,7 @@
     }
 
     .about-me-right .circle {
-        transform: translate(165%, 20%);
+        transform: translate(165%, 50%);
         width: 30vw;
         height: 30vw;
         font-size: 0.6vw;

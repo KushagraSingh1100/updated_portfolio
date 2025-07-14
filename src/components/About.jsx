@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "../styles/About.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -6,7 +6,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 function About() {
   const circleRef = useRef(null);
   useGSAP(() => {
-    let mm = gsap.matchMedia();
     gsap.registerPlugin(ScrollTrigger);
     const circle = circleRef.current;
     gsap.from(".about-me-left", {

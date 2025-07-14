@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import "../styles/Projects.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -12,10 +12,10 @@ import youtube from "../assets/imgs/youtube.jpeg";
 
 function Projects() {
   const links = [
-    "https://github.com/KushagraSingh1100/Link-Shortner",
+    "https://github.com/KushagraSingh1100/AmiBot",
     "https://github.com/KushagraSingh1100/eventpulse",
     "https://github.com/KushagraSingh1100/IITR-BitByBit",
-    "https://github.com/KushagraSingh1100/Youtube-Clone",
+    "https://github.com/KushagraSingh1100/Link-Shortner",
   ];
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -94,8 +94,8 @@ function Projects() {
       <div className="projects-items">
         {[
           {
-            title: "Rapid Shortener",
-            desc: "A fast and minimal URL shortening tool that creates compact links with click tracking, designed for simplicity, speed, and a seamless user experience.",
+            title: "AmiBot",
+            desc: "A context-aware RAG chatbot built to assist Amity students with their assignments by answering questions from uploaded study material PDFs. Powered by FastAPI, ChromaDB, and Ollama with a clean React frontend.",
           },
           {
             title: "Event Pulse",
@@ -106,8 +106,8 @@ function Projects() {
             desc: "A freelance marketplace platform with features like escrow payment system, milestone tracking, and secure client-freelancer collaboration. Designed for smooth and trusted project management.",
           },
           {
-            title: "YouTube Clone",
-            desc: "A video streaming web app replicating core YouTube features like video playback, search, categories, and responsive UI using the YouTube Data API.",
+            title: "Rapid Shortener",
+            desc: "A fast and minimal URL shortening tool that creates compact links with click tracking, designed for simplicity, speed, and a seamless user experience.",
           },
         ].map((project, index) => (
           <React.Fragment key={index}>

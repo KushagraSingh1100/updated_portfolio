@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/Home.css";
 import arrow from "../assets/imgs/down-right.png";
 import { useGSAP } from "@gsap/react";
