@@ -129,10 +129,11 @@
     }
 
     .contact-slider .circle {
-        width: 8vh;
-        height: 8vh;
-        top: -4.5vh;
-        left: 70%;
+        visibility: hidden;
+        width: 500px;
+        height: 500px;
+        top: 0.1;
+        left: 10%;
     }
 
     .contact-slider .circle h1 {

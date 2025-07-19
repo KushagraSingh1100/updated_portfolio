@@ -35,9 +35,9 @@
 .home-left-tag::after {
     content: "";
     position: absolute;
-    width: 5vw;
-    height: 5vw;
-    top: 12%;
+    width: 6vw;
+    height: 6vw;
+    top: 10%;
     right: -15%;
     background-image: url('../assets/imgs/globe.png');
     background-size: 50%;
@@ -105,199 +105,52 @@
     transform: translate(-78vw, 18vh);
 }
 
-/* ✅ Mobile: max-width 600px */
 @media screen and (max-width: 600px) {
-  .home-page {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    position: relative;
-  }
+    .home-page {
+        height: 80vh;
+        width: 100vw;
+        overflow-x: hidden;
+    }
 
-  .home-left-tag {
-    height: 14vh;
-    width: 50vw;
-    transform: translate(6vw, 30vh);
-  }
+    .home-left-tag {
+        margin-top: 20vw;
+        height: 10vh;
+        width: 35vw;
+    }
 
-  .home-left-tag::before {
-    width: 14vh;
-    height: 14vh;
-    right: -30%;
-    top: 0;
-  }
+    .tag-text p {
+        font-size: 2vh;
+    }
 
-  .home-left-tag::after {
-    width: 6vh;
-    height: 6vh;
-    right: -18%;
-    top: 25%;
-  }
+    .home-left-tag::before {
+        width: 10vh;
+        height: 10vh;
+        top: 0%;
+        right: -26%;
+    }
 
-  .tag-text {
-    width: 100%;
-  }
+    .home-left-tag::after {
+        width: 6vh;
+        height: 6vh;
+        top: 18%;
+        right: -15%;
+    }
 
-  .tag-text p {
-    font-size: 4.2vw;
-    padding: 4vw;
-    width: 100%;
-  }
+    .home-right-text {
+        transform: translate(200px, 10px);
+        width: 100vw;
+    }
 
-  .home-right-text {
-    transform: translate(6vw, 50vh);
-  }
+    .right-text-arrow img {
+        width: 2.5vh;
+    }
 
-  .right-text-heading {
-    font-size: 6vw;
-  }
+    .right-text-heading {
+        transform: translate(-3vw, 0vw);
+        font-size: 1.5vh;
+    }
 
-  .right-text-arrow {
-    transform: translate(-2vw, -8vh);
-  }
-
-  .right-text-arrow img {
-    width: 4.5vw;
-  }
-
-  .home-moving-strip {
-    font-size: 11vw;
-    transform: translate(-300vw, 72vh);
-    white-space: nowrap;
-  }
-}
-
-/* ✅ Tablet: 601px–1024px */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-  .home-page {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  .home-left-tag {
-    height: 16vh;
-    width: 35vw;
-    transform: translate(5vw, 28vh);
-  }
-
-  .home-left-tag::before {
-    width: 16vh;
-    height: 16vh;
-    right: -28%;
-  }
-
-  .home-left-tag::after {
-    width: 8vh;
-    height: 8vh;
-    top: 20%;
-    right: -18%;
-  }
-
-  .tag-text {
-    width: 100%;
-  }
-
-  .tag-text p {
-    font-size: 2.5vw;
-    padding: 3vw;
-    width: 100%;
-  }
-
-  .home-right-text {
-    transform: translate(55vw, 34vh);
-  }
-
-  .right-text-heading {
-    font-size: 3.5vw;
-  }
-
-  .right-text-arrow img {
-    width: 2.8vw;
-  }
-
-  .right-text-arrow {
-    transform: translate(-4vw, -6vh);
-  }
-
-  .home-moving-strip {
-    font-size: 10vw;
-    transform: translate(-300vw, 76vh);
-    white-space: nowrap;
-  }
-}
-@media screen and (max-width: 600px) {
-  .home-page {
-    height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-    position: relative;
-  }
-
-  .home-left-tag {
-    height: auto;
-    width: 50vw;
-    transform: translate(5vw, 28vh);
-    background-color: white;
-    padding: 1vh 1vw;
-  }
-
-  .home-left-tag::before {
-    width: 12vh;
-    height: 12vh;
-    right: -30%;
-    top: 0;
-  }
-
-  .home-left-tag::after {
-    width: 6vh;
-    height: 6vh;
-    right: -18%;
-    top: 25%;
-  }
-
-  .tag-text {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .tag-text p {
-    font-size: 4vw;
-    padding: 2vw;
-    width: 100%;
-    line-height: 1.4;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  .home-right-text {
-    transform: translate(5vw, 52vh);
-    width: 90vw;
-  }
-
-  .right-text-heading {
-    font-size: 6.2vw;
-  }
-
-  .right-text-arrow {
-    transform: translate(-4vw, -8vh);
-  }
-
-  .right-text-arrow img {
-    width: 5vw;
-  }
-
-  .home-moving-strip {
-    position: absolute;
-    bottom: 4vh;
-    left: 0;
-    font-size: 11vw;
-    transform: translateX(-300vw);
-    white-space: nowrap;
-    padding-left: 4vw;
-  }
+    .home-moving-strip {
+        transform: translate(15vh, 25vh);
+    }
 }
