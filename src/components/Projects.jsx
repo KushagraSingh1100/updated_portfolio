@@ -98,8 +98,8 @@ function Projects() {
             desc: "A context-aware RAG chatbot built to assist Amity students with their assignments by answering questions from uploaded study material PDFs. Powered by FastAPI, ChromaDB, and Ollama with a clean React frontend.",
           },
           {
-            title: "Event Pulse",
-            desc: "A dynamic event management web app that allows users to discover, create, and manage events seamlessly. Built with a responsive UI and real-time updates for a smooth user experience.",
+            title: "Transfer Buddy",
+            desc: "A WebRTC-based peer-to-peer file sharing application with real-time chat, live connection status, and a responsive user interface for seamless cross-device transfers.",
           },
           {
             title: "Free Work",
